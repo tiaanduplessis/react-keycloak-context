@@ -1,0 +1,42 @@
+{
+  "name": "react-keycloak-context",
+  "version": "1.0.0",
+  "description": "A Keycloak provider for React",
+  "main": "src/index.js",
+  "scripts": {
+    "prepublish": "yarn lint",
+    "lint": "standard --fix src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiaanduplessis/react-keycloak-context.git"
+  },
+  "keywords": [
+    "react",
+    "context",
+    "keycloak",
+    "auth"
+  ],
+  "author": "Tiaan du Plessis <tiaanduplessis@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tiaanduplessis/react-keycloak-context/issues"
+  },
+  "homepage": "https://github.com/tiaanduplessis/react-keycloak-context#readme",
+  "peerDependencies": {
+    "react": "16.x.x"
+  },
+  "dependencies": {
+    "keycloak-js": "^6.0.1"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "standard": "^12.0.1"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "env": {
+      "browser": true
+    }
+  }
+}
