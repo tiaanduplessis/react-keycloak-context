@@ -8,8 +8,8 @@
   "scripts": {
     "prepublish": "npm run build",
     "lint": "standard --fix",
-    "build": "microbundle -o dist/ --sourcemap false --compress false",
-    "dev": "microbundle watch -o dist/ --sourcemap false --compress false"
+    "build": "microbundle -o dist/ --sourcemap false --compress false --jsx React.createElement",
+    "dev": "microbundle watch -o dist/ --sourcemap false --compress false --jsx React.createElement"
   },
   "repository": {
     "type": "git",
