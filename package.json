@@ -2,10 +2,17 @@
   "name": "react-keycloak-context",
   "version": "1.0.0",
   "description": "A Keycloak provider for React",
-  "main": "src/index.js",
+  "main": "dist/react-keycloak-context.js",
+  "module": "dist/react-keycloak-context.m.js",
+  "source": "src/index.js",
   "scripts": {
-    "prepublish": "yarn lint",
-    "lint": "standard --fix src/index.js"
+    "prepublish": "npm run build",
+    "postversion": "npm publish",
+    "preversion": "npm run test",
+    "pretest": "npm run lint",
+    "lint": "standard --fix",
+    "build": "microbundle -o dist/ --sourcemap false --compress false",
+    "dev": "microbundle watch -o dist/ --sourcemap false --compress false"
   },
   "repository": {
     "type": "git",
@@ -24,17 +31,20 @@
   },
   "homepage": "https://github.com/tiaanduplessis/react-keycloak-context#readme",
   "peerDependencies": {
-    "react": "16.x.x"
+    "react": "*"
   },
   "dependencies": {
     "keycloak-js": "^6.0.1"
   },
   "devDependencies": {
+    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "babel-eslint": "^10.0.1",
+    "microbundle": "^0.11.0",
     "standard": "^12.0.1"
   },
   "standard": {
     "parser": "babel-eslint",
+    "ignore": "dist",
     "env": {
       "browser": true
     }
