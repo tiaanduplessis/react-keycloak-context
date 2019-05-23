@@ -1,6 +1,6 @@
 {
   "name": "react-keycloak-context",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Keycloak provider for React",
   "main": "dist/react-keycloak-context.js",
   "module": "dist/react-keycloak-context.m.js",
