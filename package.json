@@ -7,9 +7,6 @@
   "source": "src/index.js",
   "scripts": {
     "prepublish": "npm run build",
-    "postversion": "npm publish",
-    "preversion": "npm run test",
-    "pretest": "npm run lint",
     "lint": "standard --fix",
     "build": "microbundle -o dist/ --sourcemap false --compress false",
     "dev": "microbundle watch -o dist/ --sourcemap false --compress false"
