@@ -3,13 +3,12 @@
   "version": "1.0.3",
   "description": "A Keycloak provider for React",
   "main": "dist/react-keycloak-context.js",
-  "module": "dist/react-keycloak-context.m.js",
   "source": "src/index.js",
   "scripts": {
     "prepublish": "npm run build",
     "lint": "standard --fix",
-    "build": "microbundle -o dist/ --sourcemap false --compress false --jsx React.createElement",
-    "dev": "microbundle watch -o dist/ --sourcemap false --compress false --jsx React.createElement"
+    "build": "microbundle -o dist/ --sourcemap false --compress false --jsx React.createElement --format cjs",
+    "dev": "microbundle watch -o dist/ --sourcemap false --compress false --jsx React.createElement --format cjs"
   },
   "repository": {
     "type": "git",
@@ -28,9 +27,7 @@
   },
   "homepage": "https://github.com/tiaanduplessis/react-keycloak-context#readme",
   "peerDependencies": {
-    "react": "*"
-  },
-  "dependencies": {
+    "react": "*",
     "keycloak-js": "^6.0.1"
   },
   "devDependencies": {
