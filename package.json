@@ -1,6 +1,6 @@
 {
   "name": "react-keycloak-context",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Keycloak provider for React",
   "main": "dist/react-keycloak-context.js",
   "source": "src/index.js",
@@ -27,8 +27,8 @@
   },
   "homepage": "https://github.com/tiaanduplessis/react-keycloak-context#readme",
   "peerDependencies": {
-    "react": "*",
-    "keycloak-js": "^6.0.1"
+    "keycloak-js": "^6.0.1",
+    "react": "*"
   },
   "devDependencies": {
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
