@@ -7,8 +7,8 @@
   "scripts": {
     "prepublish": "npm run build",
     "lint": "standard --fix",
-    "build": "microbundle -o dist/ --sourcemap false --compress false --jsx React.createElement --format cjs",
-    "dev": "microbundle watch -o dist/ --sourcemap false --compress false --jsx React.createElement --format cjs"
+    "build": "microbundle -o dist/ --sourcemap false --compress false --jsx React.createElement",
+    "dev": "microbundle watch -o dist/ --sourcemap false --compress false --jsx React.createElement"
   },
   "repository": {
     "type": "git",
@@ -27,12 +27,11 @@
   },
   "homepage": "https://github.com/tiaanduplessis/react-keycloak-context#readme",
   "peerDependencies": {
-    "keycloak-js": "^6.0.1 || ^7.0.0",
     "react": "*"
   },
   "devDependencies": {
     "@babel/plugin-syntax-dynamic-import": "7.2.0",
-    "babel-eslint": "10.0.1",
+    "babel-eslint": "10.0.3",
     "microbundle": "0.11.0",
     "standard": "14.3.1"
   },
@@ -42,5 +41,8 @@
     "env": {
       "browser": true
     }
+  },
+  "dependencies": {
+    "keycloak-js": "6.0.1"
   }
 }
