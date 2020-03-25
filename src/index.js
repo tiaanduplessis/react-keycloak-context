@@ -44,8 +44,8 @@ class KeycloakProvider extends Component {
       refreshToken &&
       refreshToken !== 'undefined'
     ) {
-      initOptions['token'] = token
-      initOptions['refreshToken'] = refreshToken
+      initOptions.token = token
+      initOptions.refreshToken = refreshToken
     }
 
     return kc.init(initOptions).then(authenticated => {
