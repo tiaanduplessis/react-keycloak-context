@@ -43,6 +43,6 @@
     }
   },
   "dependencies": {
-    "keycloak-js": "9.0.2"
+    "keycloak-js": "10.0.2"
   }
 }
