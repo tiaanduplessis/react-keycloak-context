@@ -1,3 +1,6 @@
+# *Deprecated in favor of [react-keycloak](https://github.com/panz3r/react-keycloak)*
+
+<hr/>
 
 # react-keycloak-context
 [![package version](https://img.shields.io/npm/v/react-keycloak-context.svg?style=flat-square)](https://npmjs.org/package/react-keycloak-context)
